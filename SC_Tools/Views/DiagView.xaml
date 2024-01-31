@@ -1,0 +1,32 @@
+﻿<Controls:MetroWindow  xmlns:Controls="http://metro.mahapps.com/winfx/xaml/controls" x:Class="SC_Tools.Views.DiagView"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SC_Tools.Views"
+        mc:Ignorable="d"
+        Title="DiagView" Height="450" Width="800" ResizeMode="NoResize">
+    <Grid>
+        <!--#region Grid Definitions-->
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <!--#endregion-->
+        <StackPanel Orientation="Vertical" Margin="20" Grid.Column="0">
+            <Button x:Name="BtnDiagCleanup" Content="Begin Cleanup Process" Margin="10" Click="BtnDiagCleanup_Click"/>
+            <Button x:Name="BtnDiagProcess" Content="Begin Diagnostic Process" Margin="10" Click="BtnDiagProcess_Click" IsEnabled="False"/>
+        </StackPanel>
+        
+        <StackPanel Orientation="Vertical" Margin="20" Grid.Column="1" Grid.RowSpan="2">
+            <TextBlock Margin="10" Text="Cleanup Progress"/>
+            <ProgressBar x:Name="diagBar" Margin="10"/>
+            <TextBlock Margin="10" Text="Diagnositc Progress"/>
+            <ProgressBar x:Name="processBar" Margin="10"/>
+        </StackPanel>
+    </Grid>
+</Controls:MetroWindow>

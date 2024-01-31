@@ -1,0 +1,6 @@
+REGEDIT4
+
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\JosephTest]
+"TestKey1"="0"
+"TestKey2"=dword:00000001

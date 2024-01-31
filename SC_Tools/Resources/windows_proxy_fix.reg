@@ -1,0 +1,27 @@
+REGEDIT4
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Internet Settings]
+"MinorVersion"="0"
+"CodeBaseSearchPath"="CODEBASE;<http://codecs.microsoft.com/isapi/ocget.dll>"
+"UrlEncoding"="0x00000000"
+"ActiveXCache"="C:\\WINDOWS\\Downloaded Program Files"
+"EnablePunycode"=dword:00000001
+"WarnOnIntranet"=dword:00000001
+"ProxyEnable"=dword:00000000
+"ProxyOverride"=-
+"ProxyServer"=-
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\Windows\CurrentVersion\Internet Settings]
+"ProxyEnable"=dword:00000000
+"ProxyOverride"=-
+"ProxyServer"=-
+
+[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\services\NlaSvc\Parameters\Internet\ManualProxies]
+@=""
+
+[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet002\services\NlaSvc\Parameters\Internet\ManualProxies]
+@=""
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Internet Settings\Connections]
+"DefaultConnectionSettings"=-
+"SavedLegacySettings"=-

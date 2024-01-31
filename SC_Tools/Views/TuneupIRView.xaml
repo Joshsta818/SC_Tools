@@ -1,0 +1,45 @@
+﻿<Controls:MetroWindow  xmlns:Controls="http://metro.mahapps.com/winfx/xaml/controls" x:Class="SC_Tools.Views.TuneupIRView"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SC_Tools.Views"
+        mc:Ignorable="d"
+        Title="TuneupIRView" Height="500" Width="800"
+        ResizeMode="NoResize">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <StackPanel Orientation="Vertical" Margin="20" Grid.Column="0">
+            <TextBlock Text="This side of the panel will be used to give tech information about the currnet step" TextWrapping="Wrap"/>
+            <Button x:Name="btnCleanup" Content="Pre-Tuneup Process" Click="Button_Click" Margin="20"/>
+            <ProgressBar x:Name="preTuneupPrgBar" Margin="20,0,20,0"/>
+            <Button x:Name="btnTuneup" Content="Tuneup Process" Click="Button_Click_1" Margin="20" IsEnabled="False"/>
+            <ProgressBar x:Name="tuneupPrgBar" Margin="20,0,20,0"/>
+        </StackPanel>
+        <StackPanel Orientation="Vertical" Margin="20" Grid.Column="0" Grid.Row="1">
+            <TextBlock Text="Do not worry about grabbing the information from logs froms scans as all logs will be presented to the user at the end of the scans automatically"
+                       TextWrapping="Wrap" Margin="10"/>
+        </StackPanel>
+        <StackPanel Orientation="Vertical" Margin="20" Grid.Column="1" Grid.RowSpan="2">
+            <TextBlock Text="The pre tuneup process button starts several different process. This will cleanup any logs left over from previous scans, as well as cleanup old sit information. This also prepares the machie for the tuneup process by stopping SIT and other services that may cause issues with the tuneup process" TextWrapping="Wrap" Margin="10"/>
+            <TextBlock Text="The tune up button will start the actual tuneup process. the process executes in the following order" TextWrapping="Wrap" Margin="10"/>
+            <TextBlock Text="1.) Tools Required are Downloaded" TextWrapping="Wrap" Margin="5"/>
+            <TextBlock Text="2.) Host File Cleaned" TextWrapping="Wrap" Margin="5"/>
+            <TextBlock Text="3.) Proxy Fix Executed" TextWrapping="Wrap" Margin="5"/>
+            <TextBlock Text="4.) Proxy Check (Inetcpl.cpl call and registry check" TextWrapping="Wrap" Margin="5"/>
+            <TextBlock Text="5.) Bleachbit Clean Executed" TextWrapping="Wrap" Margin="5"/>
+            <TextBlock Text="6.) Windows Cleanup Executed" TextWrapping="Wrap" Margin="5"/>
+            <TextBlock Text="7.) RogueKiller Executed" TextWrapping="Wrap" Margin="5"/>
+            <TextBlock Text="8.) ADW Executed" TextWrapping="Wrap" Margin="5"/>
+            <TextBlock Text="9.) Appwiz check for apps to remove" TextWrapping="Wrap" Margin="5"/>
+            <TextBlock Text="10.) ADW executed again for cleanup" TextWrapping="Wrap" Margin="5"/>
+        </StackPanel>
+    </Grid>
+</Controls:MetroWindow>
